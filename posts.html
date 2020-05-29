@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadMin | Admin Dashboard</title>
+
+    <!-- Import Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
+      rel="stylesheet"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Import my styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="grey lighten-4">
+    <!-- ************************************** -->
+    <!-- *************   NavBar   ************* -->
+    <!-- ************************************** -->
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">MadMin</a>
+          <!-- Toggle btn -->
+          <a
+            href="#"
+            class="sidenav-trigger show-on-large right"
+            data-target="side-nav"
+          >
+            <i class="material-icons">menu</i>
+          </a>
+
+          <!-- navbar links -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Dashboard</a></li>
+            <li class="active"><a href="posts.html">Posts</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+
+          <!-- sideNav -->
+          <ul id="side-nav" class="sidenav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/ocean.jpg" />
+                </div>
+                <a href="#user"><img class="circle" src="img/person1.jpg" /></a>
+                <a href="#name"
+                  ><span class="white-text name">Mohamed Fadl</span></a
+                >
+                <a href="#email"
+                  ><span class="white-text email"
+                    >mohamed.fadl285@gmail.com</span
+                  ></a
+                >
+              </div>
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="material-icons">dashboard</i>Dashboard</a
+              >
+            </li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li class="divider"></li>
+            <li>
+              <a class="subheader" href="#!">Account Controls</a>
+            </li>
+            <li>
+              <a href="login.html" class="waves-effect">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ************************************** -->
+    <!-- ********   Section: Posts    ********* -->
+    <!-- ************************************** -->
+
+    <section class="section section-posts grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">
+                  Posts
+                </span>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Date Created</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Post One</td>
+                      <td>Web Development</td>
+                      <td>Jan 1,2019</td>
+                      <td>
+                        <a href="details.html" class="btn blur lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Two</td>
+                      <td>Graphic Design</td>
+                      <td>May 28,2019</td>
+                      <td>
+                        <a href="details.html" class="btn blur lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Three</td>
+                      <td>Web Development</td>
+                      <td>May 28,2020</td>
+                      <td>
+                        <a href="details.html" class="btn blur lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Four</td>
+                      <td>Web Development</td>
+                      <td>Jan 20,2019</td>
+                      <td>
+                        <a href="details.html" class="btn blur lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Five</td>
+                      <td>Graphic Design</td>
+                      <td>May 28,2019</td>
+                      <td>
+                        <a href="details.html" class="btn blur lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Six</td>
+                      <td>Mobile Development</td>
+                      <td>Aug 28,2020</td>
+                      <td>
+                        <a href="details.html" class="btn blur lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-action">
+                <ul class="pagination">
+                  <li class="disabled">
+                    <a class="blue-text" href="#!"
+                      ><i class="material-icons">chevron_left</i></a
+                    >
+                  </li>
+                  <li class="active waves-effect blue lighten-2">
+                    <a class="white-text" href="#!">1</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!">2</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!">3</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!">4</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!">5</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!"
+                      ><i class="material-icons">chevron_right</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************************** -->
+    <!-- *************   Footer   ************* -->
+    <!-- ************************************** -->
+
+    <footer class="section blue darken-2 white-text center">
+      <p>MadMin Panel Copyright &copy; 2020</p>
+    </footer>
+
+    <!-- ************************************** -->
+    <!-- *******  Fixed Action Button   ******* -->
+    <!-- ************************************** -->
+
+    <div class="fixed-action-btn">
+      <a href="#post-modal" class="modal-trigger btn-floating btn-large red">
+        <i class="material-icons">add</i>
+      </a>
+    </div>
+
+    <!-- ************************************** -->
+    <!-- ************    Modals   ************* -->
+    <!-- ************************************** -->
+
+    <!-- ? Add Post Modal -->
+    <div id="post-modal" class="modal">
+      <div class="modal-content">
+        <h4>Add Post</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="postTitle" />
+            <label for="postTitle">Title</label>
+          </div>
+          <div class="input-field">
+            <select name="category" id="category">
+              <option value="" disabled selected>Select Category</option>
+              <option value="1">Web Development</option>
+              <option value="2">Graphic Design</option>
+              <option value="3">Tech Gadgets</option>
+              <option value="4">Others</option>
+            </select>
+            <label for="category">Category</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              name="body"
+              id="body"
+              class="materialize-textarea"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="#!"
+          class="modal-close waves-effect waves-light blue white-text btn"
+          >Submit</a
+        >
+      </div>
+    </div>
+
+    <!-- ************************************** -->
+    <!-- ***********   Preloader   ************ -->
+    <!-- ************************************** -->
+
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Materialize js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- CKEditor js -->
+    <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+
+    <script>
+      // Hide Sections
+      $('.section').hide();
+
+      setTimeout(function () {
+        $(document).ready(function () {
+          // Show Sections
+          $('.section').fadeIn();
+
+          // Hide Preloader
+          $('.loader').fadeOut();
+
+          // SideNav
+          $('.sidenav').sidenav();
+
+          // Initial Modal
+          $('.modal').modal();
+
+          // Initial Select
+          $('select').formSelect();
+
+          // Init CKEditor
+          CKEDITOR.replace('body');
+
+          // End
+        });
+      }, 500);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadMin | Admin Dashboard</title>
+
+    <!-- Import Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
+      rel="stylesheet"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Import my styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="grey lighten-4">
+    <!-- ************************************** -->
+    <!-- *************   NavBar   ************* -->
+    <!-- ************************************** -->
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">MadMin</a>
+          <!-- Toggle btn -->
+          <a
+            href="#"
+            class="sidenav-trigger show-on-large right"
+            data-target="side-nav"
+          >
+            <i class="material-icons">menu</i>
+          </a>
+
+          <!-- navbar links -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li class="active"><a href="users.html">Users</a></li>
+          </ul>
+
+          <!-- sideNav -->
+          <ul id="side-nav" class="sidenav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/ocean.jpg" />
+                </div>
+                <a href="#user"><img class="circle" src="img/person1.jpg" /></a>
+                <a href="#name"
+                  ><span class="white-text name">Mohamed Fadl</span></a
+                >
+                <a href="#email"
+                  ><span class="white-text email"
+                    >mohamed.fadl285@gmail.com</span
+                  ></a
+                >
+              </div>
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="material-icons">dashboard</i>Dashboard</a
+              >
+            </li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li class="divider"></li>
+            <li>
+              <a class="subheader" href="#!">Account Controls</a>
+            </li>
+            <li>
+              <a href="login.html" class="waves-effect">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ************************************** -->
+    <!-- *********  Section: Users  *********** -->
+    <!-- ************************************** -->
+
+    <section class="section section-users grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">
+                  Categories
+                </span>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Registered</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/person1.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>Mohamed Fadl</td>
+                      <td>mohamed.fadl2852@gmail.com</td>
+                      <td>Jan, 1 2019</td>
+                      <td>
+                        <a href="details.html" class="btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/person3.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>Azza Taher</td>
+                      <td>azzataher@gmail.com</td>
+                      <td>Jan, 26 2019</td>
+                      <td>
+                        <a href="details.html" class="btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/person2.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>Amr Adel</td>
+                      <td>amr@gmail.com</td>
+                      <td>Jan, 25 2019</td>
+                      <td>
+                        <a href="details.html" class="btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/person4.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>Ahmed Reda</td>
+                      <td>reda123@gmail.com</td>
+                      <td>Jan, 5 2020</td>
+                      <td>
+                        <a href="details.html" class="btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/person2.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>John Wick</td>
+                      <td>john99@gmail.com</td>
+                      <td>May, 10 2020</td>
+                      <td>
+                        <a href="details.html" class="btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-action">
+                <ul class="pagination">
+                  <li class="disabled">
+                    <a class="blue-text" href="#!"
+                      ><i class="material-icons">chevron_left</i></a
+                    >
+                  </li>
+                  <li class="active waves-effect blue lighten-2">
+                    <a class="white-text" href="#!">1</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!">2</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!">3</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="blue-text" href="#!"
+                      ><i class="material-icons">chevron_right</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************************** -->
+    <!-- *************   Footer   ************* -->
+    <!-- ************************************** -->
+
+    <footer class="section blue darken-2 white-text center">
+      <p>MadMin Panel Copyright &copy; 2020</p>
+    </footer>
+
+    <!-- ************************************** -->
+    <!-- *******  Fixed Action Button   ******* -->
+    <!-- ************************************** -->
+
+    <div class="fixed-action-btn">
+      <a
+        href="#category-modal"
+        class="modal-trigger btn-floating btn-large red"
+      >
+        <i class="material-icons">add</i>
+      </a>
+    </div>
+
+    <!-- ************************************** -->
+    <!-- ************    Modals   ************* -->
+    <!-- ************************************** -->
+
+    <!-- ? Add User Modal -->
+    <div id="user-modal" class="modal">
+      <div class="modal-content">
+        <h4>Add User</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="userName" />
+            <label for="userName">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" id="userEmail" />
+            <label for="userEmail">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="pass" />
+            <label for="pass">Password</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="confirmPass" />
+            <label for="confirmPass">Confirm Password</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="#!"
+          class="modal-close waves-effect waves-light blue white-text btn"
+          >Submit</a
+        >
+      </div>
+    </div>
+
+    <!-- ************************************** -->
+    <!-- ***********   Preloader   ************ -->
+    <!-- ************************************** -->
+
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Materialize js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      // Hide Sections
+      $('.section').hide();
+
+      setTimeout(function () {
+        $(document).ready(function () {
+          // Show Sections
+          $('.section').fadeIn();
+
+          // Hide Preloader
+          $('.loader').fadeOut();
+
+          // SideNav
+          $('.sidenav').sidenav();
+
+          // Initial Modal
+          $('.modal').modal();
+
+          // End
+        });
+      }, 500);
+    </script>
+  </body>
+</html>
